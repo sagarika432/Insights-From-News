@@ -1,0 +1,21 @@
+.caro
+{
+    background-color: white;
+    height: 650px;
+
+}
+.raise
+{
+    padding-top: 30px;
+    margin-top: 30px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+.imgg
+{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+   
+    vertical-align: middle;
+}

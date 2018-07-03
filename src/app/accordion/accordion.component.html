@@ -1,0 +1,44 @@
+<accordion class="btn-block">
+  <accordion-group heading="First Used When "  [isOpen]="isFirstOpen">
+    
+<!--     <div class="container -fluid">
+      <div class="row">
+        
+ -->    
+ <!-- {{message}} -->
+ 
+ <ul *ngFor="let post of temp">
+          <li style= " text-align : left ;">{{post.webPublicationDate}}</li>
+          <li style= " text-align : left ;">{{post.webTitle}}</li>
+          <li style= " text-align : left ;">{{post.webUrl}}</li>
+        </ul>
+<!-- 
+    </div>
+        </div> -->
+
+
+
+
+
+
+
+
+  </accordion-group>
+  <accordion-group heading="MostUsed" [isOpen]="isFirstOpen">
+
+      <!-- <div class="container -fluid">
+          <div class="row"> -->
+            <ul *ngFor="let post of temp1">
+              <li style= " text-align : left ;">{{post.webPublicationDate}}</li>
+              <li style= " text-align : left ;" >{{post.webTitle}}</li>
+              <li style= " text-align : left ;">{{post.webUrl}}</li>
+            </ul>
+    <!-- 
+            </div>
+            </div>  -->
+    
+
+    <!-- <p>needs to be loaded from database</p> -->
+  </accordion-group>
+
+</accordion>

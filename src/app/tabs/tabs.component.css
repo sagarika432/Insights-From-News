@@ -1,0 +1,21 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }
+
+  .box
+  {
+      height: 420px;
+  }
+
+  .success{
+    color: green;
+    font-size: 20px;
+}
+.error{
+    color: red;
+    font-size: 20px;
+} 

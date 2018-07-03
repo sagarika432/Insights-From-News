@@ -1,0 +1,30 @@
+.img{
+    position: relative;
+    top: 0;
+    left: 0;
+   
+    border-radius: 50%;
+    height: 150px;
+    width: 100px;
+    z-index: 3;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+
+}
+.inner
+{
+    background-color: white;
+    position: relative;
+    
+
+		top: -30px;
+        left: 0px;
+        z-index: 1
+        
+}
+.raise
+{
+    padding-top: 30px;
+    margin-top: 30px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}

@@ -1,0 +1,10 @@
+
+<h3  style = " color :white "> {{message | uppercase}} count in all sections in past </h3>
+
+
+<ngx-charts-pie-grid *ngIf="test1"
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="test1"
+      (select)="onSelect($event)">
+    </ngx-charts-pie-grid>

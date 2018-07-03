@@ -1,0 +1,17 @@
+
+<h3  style = " color :white ">{{message | uppercase }} in all sections for 6 months </h3>
+
+
+<ngx-charts-gauge  *ngIf="test1"
+[view]="view"
+[scheme]="colorScheme"
+[results]="test1"
+[min]="0"
+[max]="100"
+[angleSpan]="240"
+[startAngle]="-120"
+[units]="'alerts'"
+[bigSegments]="10"
+[smallSegments]="5"
+(select)="onSelect($event)">
+</ngx-charts-gauge>

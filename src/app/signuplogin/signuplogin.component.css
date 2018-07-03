@@ -1,0 +1,15 @@
+.inner
+{
+    background-color: gray;
+    position: relative;
+		top: -30px;
+        left: 0px;
+        z-index: 1
+        
+}
+.raise
+{
+    padding-top: 30px;
+    margin-top: 30px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}

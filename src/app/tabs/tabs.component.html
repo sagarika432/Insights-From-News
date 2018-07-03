@@ -1,0 +1,119 @@
+
+<div >
+
+
+  <tabset [justified]="true">
+    <tab heading="Login" >
+
+        <div class="container-fluid" class="box">
+          <form (ngSubmit)="onSubmit1()" #loggedinuserForm="ngForm"> 
+            <!--   {{ diagnostic1 }}
+              {{message}} -->
+            <!--   <button (click)="newMessage()">New Message</button> -->
+            <div class="form-group" >
+
+              <label for="username" >Username</label>
+              <input type="text" class="form-control"  required [(ngModel)]="model1.username" name="username"  #username1="ngModel">
+              <!-- //TODO: remove this: {{model1.username}} -->
+              <div [hidden]="username1.valid || username1.pristine"
+                  class="alert alert-danger">
+                username is required
+            </div>
+
+            </div>
+            
+            <br/>
+            <br/>
+            
+            <div class="form-group" >
+
+              <label for="password">Password</label>
+              <input type="password" class="form-control"  required  [(ngModel)]="model1.password" name="password" #password1 = "ngModel">
+             <!-- // TODO: remove this: {{model1.password}} -->
+             <div [hidden]="password1.valid || password1.pristine"
+             class="alert alert-danger">
+           password is required
+       </div>
+            </div>
+            <br/>
+            <br/>
+            <button type="submit" class="btn btn-success" [disabled]="!loggedinuserForm.form.valid" >Submit</button>
+          </form>
+          <div *ngIf= loggedinuser > <h3> Logged in </h3></div>
+
+        </div>
+
+
+
+
+
+
+
+    </tab>
+    <!-- <tab heading="SJ">Short Labeled Justified content</tab> -->
+    <tab heading="Signup"> <div class="container-fluid" class="box">
+      <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <!-- 
+         {{diagnostic}} -->
+        <div class="form-group">
+
+          <label for="username" >Username</label>
+          <input type="text" class="form-control"  required  [(ngModel)]="model.username" name="username"  #username="ngModel">
+          <div [hidden]="username.valid || username.pristine"
+                    class="alert alert-danger">
+                        username is required
+          </div> 
+         
+        </div>
+        <div class="form-group">
+
+          <label for="name">Name</label>
+          <input type="text" class="form-control" required  [(ngModel)]="model.name" name="name" #name="ngModel">
+          <div [hidden]="name.valid || name.pristine"
+          class="alert alert-danger">
+            name is required
+            </div>
+        </div>
+        <div class="form-group">
+
+          <label for="emailid">Email-id</label>
+          <input type="text" class="form-control" required  [(ngModel)]="model.emailid" name="emailid" #emailid="ngModel">
+          <div [hidden]="emailid.valid || emailid.pristine"
+          class="alert alert-danger">
+              emailid is required
+        </div>
+        </div>
+        <div class="form-group">
+
+          <label for="description">Description</label>
+          <input type="textarea" class="form-control"  required  [(ngModel)]="model.description" name="description" #description="ngModel">
+          <div [hidden]="description.valid || description.pristine"
+          class="alert alert-danger">
+              description is required
+        </div>
+        </div>
+        <div class="form-group">
+
+          <label for="password">Password</label>
+          <input type="password" class="form-control" required [(ngModel)]="model.password" name="password" #password="ngModel">
+         
+          <div [hidden]="password.valid || password.pristine"
+                    class="alert alert-danger">
+                        password is required
+        </div>
+      </div>
+        <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Submit</button>
+      </form>
+
+      <div *ngIf="tempname" [ngClass] = "'success'"> {{tempname}} Added. </div>
+      <div *ngIf="errormsg" [ngClass] = "'error'"> {{errormsg}} </div> 
+
+    </div>
+</tab>
+  </tabset>
+
+
+
+
+</div>
+

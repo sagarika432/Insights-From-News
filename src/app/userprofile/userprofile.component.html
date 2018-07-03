@@ -1,0 +1,32 @@
+<div><ul></ul></div>
+
+<div class="raise" >
+
+  <img class= "img" src= "http://md-angular2.creative-tim.com/assets/img/faces/marc.jpg"  >
+  <div class="inner " >
+   <br/>
+   <br/>
+   <br/>
+   
+  <!--  <div *ngIf="temp" class="alert alert-success">{{temp.text}}</div> -->
+    
+    <!-- <p *ngIf = "message" >Name </p> -->
+   <!--  <p>email-id</p>
+    <p>Description.........................</p> -->
+    {{message}}
+<div  *ngIf = "message">
+    <ul *ngFor="let post of _postsArray">
+      <li class="list">{{post.name}}</li>
+      <li class="list">{{post.username}}</li>
+      <li class="list">{{post.emailid}}</li>
+      <li class="list">{{post.description}}</li>
+    </ul>
+   </div>
+  </div>
+</div>
+<div >
+ <!--  <app-modal2></app-modal2> -->
+</div>
+<div>
+  <app-advancedpiechart></app-advancedpiechart>
+</div>
